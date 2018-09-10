@@ -1,0 +1,19 @@
+<%- include("../partials/header") %>
+<form action="/cohorts" method="POST" class="m-3">
+<div class="form-group">
+    <label for="logoUrl">Logo Url</label>
+    <input class="form-control" type="text" name="logoUrl" placeholder="e.g. https://www.example.com/some.png">
+</div>
+<div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" name="name" placeholder="Flying Funks">
+</div>
+<div class="form-group">
+    <label for="members">Members</label>
+    <textarea class="form-control" name="members" rows="3" placeholder="Jon Snow, Daenerys, Melisandre, Arya Stark"></textarea>
+</div>
+<div class="d-flex justify-content-end">
+<button type="submit" class="btn btn-outline-primary">Submit</button>
+</div>
+</form>
+<%- include("../partials/footer") %>
