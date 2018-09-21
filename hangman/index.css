@@ -1,0 +1,83 @@
+body {
+    width:100vw;
+    height:100vh;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Comic Sans MS', Courier, monospace;
+    font-size: 150%;
+    color: orange;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+#title > h1 {
+    margin: 0;
+}
+
+#hangman-area {
+    display: flex;
+    justify-content: center;
+}
+
+#guess-area {
+    display: flex;
+    justify-content: center;
+    font-family: 'Comic Sans MS', Courier, monospace;
+    font-size: 25px;
+
+}
+
+#guess-area > div {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    min-width: 50px;
+    min-height: 40px;
+}
+
+#guess-area > div > p {
+    margin: 0;
+    color: red;
+}
+
+
+#alphabet-container {
+    display: flex;
+    justify-self: center;
+    flex-wrap: wrap;
+    max-width: 650px;
+    margin: 30px auto;
+}
+
+.letters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    min-width: 50px;
+    font-family: 'Comic Sans MS', Courier, monospace;
+    font-size: 25px;
+    border-radius: 20px;
+    margin: 5px;
+    background-color: black;
+}
+
+.letters > p {
+    margin: 0;
+    color: white;
+}
+
+.correct {
+    background-color: orange;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.underline {
+    border-bottom: 2px solid;
+}
